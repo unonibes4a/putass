@@ -1,20 +1,23 @@
 <!DOCTYPE html>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <html>
+
+<script src="jquery.js"></script>
 <style>
-#idtodo{
+#idpanelcolocacanal{
 
     position: absolute;
     top: 0%;
     left: 0%;
     width: 100%;
     height: 100%;
-    background-color: brown;
+    background-color: rgb(69, 26, 138);
+    z-index: 2000;
 }
 
 </style>
 <body onload="fonloadmio();">
-<div id="idtodo">
+<div id="idpanelcolocacanal">
 
     <script type='text/javascript'> width='100%', height='100%', id='directvsports';</script><script type='text/javascript' src='http://embed.futboltv-envivo.com/embed.js'></script>
 
@@ -26,7 +29,12 @@
 
 function fonloadmio(){
 
+alert(123);
 
+setTimeout(function(){
+   // document.getElementById("directvsports").style.display="none";
+    $("#directvsports").empty();
+},4000);
 }
 
 </script>
