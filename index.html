@@ -1,80 +1,37 @@
 <!DOCTYPE html>
 <html>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<style>
+<head>
+    <style>
 
 
-    #idtodo{
-        position: absolute;
-        top: 0%;
-        left: 0%;
-        width: 100%;
-        height: 100%;
-        background-color: rgb(0, 0, 0);
-    }
+        #idaca{
 
-    #idregresar{
+            position: absolute;
+            top: 0%;
+            left: 0%;
+            width: 100%;
+            height: 100%;
+            background-color: brown;
+            z-index: -1;
+        }
+    </style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("button").click(function(){
+  
+        $("#idaca").load("https://soloveo.com/espn3hd.php",function(datas){
+       $(this).html(datas);   
+        });
 
-        position: absolute;
-        top: 0%;
-        right:0%;
-        width:200px;
-        height: 70px;
-        background-color: rgba(0, 0, 0, 0.664);
-        color: rgb(255, 255, 255);
-        z-index: 20;
-    }
-
-.clesta{ position: absolute;
-        top: 0%;
-        left:0%;
-        width:100%;
-        height:100%;
-z-index: 2;
-    }
-
-
-    #idoculta{
-        position: absolute;
-       bottom: 0%;
-        right:0%;
-        width:300px;
-        height: 70px;
-        background-color: rgba(139, 94, 11, 0);
-
-        z-index: 20;
-    
-    }
-</style>
+ 
+  });
+});
+</script>
+</head>
 <body>
 
-<div id="idtodo">
-
-   
- 
-
-      <iframe   class="clesta" id="idiframe" 
-      src="https://soloveo.com/espn3hd.php"
-       frameborder="0" 
-       allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
-         allowfullscreen="false" webkitallowfullscreen="false" mozallowfullscreen="false" 
-            allowfullscreen="false"><div id="idocultaeso"></div></iframe>
-                  
-
-
-    <button id="idregresar" onclick="myFunction()">salir</button>
-    <div id="idoculta"></div>
-</div>
-
-<script>
-
-function myFunction() { 
-
-    window.location="https://unonibes4a.github.io/nvalerianx/";
- }
-
-</script>
-
-
+<button>Send an HTTP GET request to a page and get the result back</button>
+<div id="idaca"></div>
 </body>
 </html>
