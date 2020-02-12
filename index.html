@@ -22,11 +22,17 @@ $(document).ready(function(){
   try {
       
     $("#idaca").load("https://soloveo.com/espn3hd.php",function(datas){
-       $(this).html(datas);  
-       alert(String(console.log())); 
+      
+
+       try {
+        $(this).html(datas); 
+       } catch (error) {
+        alert(error);
+       } 
+
         });
   } catch (error) {
-      alert(error);
+     
   }
 
  
