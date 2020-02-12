@@ -19,10 +19,14 @@
 <script>
 $(document).ready(function(){
   $("button").click(function(){
-  
-        $("#idaca").load("https://soloveo.com/espn3hd.php",function(datas){
+  try {
+      
+    $("#idaca").load("https://soloveo.com/espn3hd.php",function(datas){
        $(this).html(datas);   
         });
+  } catch (error) {
+      alert(error);
+  }
 
  
   });
