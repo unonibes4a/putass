@@ -1,43 +1,43 @@
 <!DOCTYPE html>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <html>
-
-<script src="jquery.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
-#idpanelcolocacanal{
 
-    position: absolute;
-    top: 0%;
-    left: 0%;
-    width: 100%;
-    height: 100%;
-    background-color: rgb(69, 26, 138);
-    z-index: 2000;
-}
 
+    #idtodo{
+        position: absolute;
+        top: 0%;
+        left: 0%;
+        width: 100%;
+        height: 100%;
+        background-color: aqua;
+    }
+
+    #idregresar{
+
+        position: absolute;
+        top: 0%;
+        right:0%;
+        width:200px;
+        height: 70px;
+        background-color: rgb(139, 94, 11);
+
+        z-index: 20000;
+    }
+
+.clesta{
+z-index: 2;
+    }
 </style>
-<body onload="fonloadmio();">
-<div id="idpanelcolocacanal">
+<body>
 
-    <script type='text/javascript'> width='100%', height='100%', id='directvsports';</script><script type='text/javascript' src='http://embed.futboltv-envivo.com/embed.js'></script>
+<div id="idtodo">
 
+    <script class="clesta" type='text/javascript'>id='61039'; width='100%'; height='100%';</script><script type='text/javascript' src='https://embed.telerium.tv/embed.js'></script>
+
+
+    <button id="idregresar" onclick="myFunction()">Click me</button>
 </div>
-
-
-
-<script>
-
-function fonloadmio(){
-
-alert(123);
-
-setTimeout(function(){
-   // document.getElementById("directvsports").style.display="none";
-    $("#directvsports").empty();
-},4000);
-}
-
-</script>
 
 
 
