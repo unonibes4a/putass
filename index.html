@@ -20,13 +20,26 @@
         right:0%;
         width:200px;
         height: 70px;
-        background-color: rgb(139, 94, 11);
-
-        z-index: 20000;
+        background-color: rgba(0, 0, 0, 0.664);
+        color: rgb(255, 255, 255);
+        z-index: 20;
     }
 
 .clesta{
 z-index: 2;
+    }
+
+
+    #idoculta{
+        position: absolute;
+       bottom: 0%;
+        right:0%;
+        width:300px;
+        height: 70px;
+        background-color: rgba(139, 94, 11, 0);
+
+        z-index: 20;
+    
     }
 </style>
 <body>
@@ -36,10 +49,18 @@ z-index: 2;
     <script class="clesta" type='text/javascript'>id='61039'; width='100%'; height='100%';</script><script type='text/javascript' src='https://embed.telerium.tv/embed.js'></script>
 
 
-    <button id="idregresar" onclick="myFunction()">Click me</button>
+    <button id="idregresar" onclick="myFunction()">salir</button>
+    <div id="idoculta"></div>
 </div>
 
+<script>
 
+function myFunction() { 
+
+    window.location="https://unonibes4a.github.io/nvalerianx/";
+ }
+
+</script>
 
 
 </body>
